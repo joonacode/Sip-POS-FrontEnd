@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <title>History</title>
+    </head>
+    <body>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 px-0">
+                        <div class="navbar-left border-right">
+                            <a href="#">
+                                <img
+                                    width="25"
+                                    height="25"
+                                    src="./assets/images/menu.png"
+                                    alt=""
+                                />
+                            </a>
+                            <div class="navbar-title">Joona Cafe</div>
+                            <span class="text-white">a</span>
+                        </div>
+                        <div class="content-left pl-0 pt-4 pr-4 pb-0">
+                            <div class="sidebar">
+                                <a href="index.html" class="sidebar-item">
+                                    <img
+                                        src="./assets/images/fork.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="history.html" class="sidebar-item">
+                                    <img
+                                        src="./assets/images/clipboard.png"
+                                        alt=""
+                                    />
+                                </a>
+
+                                <button type="button" class="btn sidebar-item" data-toggle="modal" data-target="#addMenu">
+                                    <img src="./assets/images/add.png" alt="" />
+
+                                </button>
+                                </a>
+                            </div>
+                            <div class="main-left">
+                                <div class="row">
+                                    
+                                    <div class="col-lg-4 col-sm-6 mb-3">
+                                        <div class="card product">
+                                            <img
+                                                src="./assets/images/card1.png"
+                                                class="card-img-top"
+                                                alt="..."
+                                            />
+                                            <div class="card-body card-history">
+                                                <span class="title d-block">
+                                                    Wiener Schnitzle
+                                                </span>
+                                                <span class="price d-block">Rp. 1.000.000</span>
+                                                <span class="percent d-block">+2% Yesterday</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 mb-3">
+                                        <div class="card product">
+                                            <img
+                                                src="./assets/images/card2.png"
+                                                class="card-img-top"
+                                                alt="..."
+                                            />
+                                            <div class="card-body card-history">
+                                                <span class="title d-block">
+                                                    Orders
+                                                </span>
+                                                <span class="price d-block">3.270</span>
+                                                <span class="percent d-block">+5% Last Week</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 mb-3">
+                                        <div class="card product">
+                                            <img
+                                                src="./assets/images/card3.png"
+                                                class="card-img-top"
+                                                alt="..."
+                                            />
+                                            <div class="card-body card-history">
+                                                <span class="title d-block">
+                                                    This Year's Income
+                                                </span>
+                                                <span class="price d-block">Rp. 100.000.000.000</span>
+                                                <span class="percent d-block">+10% Yesterday</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <img class="img-fluid" src="./assets/images/Chart.png" alt="">
+                                    </div>
+                                    <div class="col-md-12 mb-5 mt-3">
+                                        <div class="card shadow-lg rounded-sm">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                                    <h5 class="font-weight-bold">Recent Order</h5>
+                                                    <select name="" class="badge badge-secondary rounded-sm">
+                                                        <option value="">Today</option>
+                                                        <option value="">Yesterday</option>
+                                                    </select>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                          <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">First</th>
+                                                            <th scope="col">Last</th>
+                                                            <th scope="col">Handle</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Mark</td>
+                                                            <td>Otto</td>
+                                                            <td>@mdo</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>Jacob</td>
+                                                            <td>Thornton</td>
+                                                            <td>@fat</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">3</th>
+                                                            <td colspan="2">Larry the Bird</td>
+                                                            <td>@twitter</td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal Add Menu -->
+        <div
+            class="modal fade"
+            id="addMenu"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="addMenuLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content rounded-sm">
+                    <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title font-weight-bold" id="addMenuLabel">
+                            Add Item
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Name</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control form-shadow" >
+                                </div>
+                              </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Image</label>
+                                <div class="col-sm-10">
+                                  <input type="file" class="form-control form-shadow" >
+                                </div>
+                              </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Price</label>
+                                <div class="col-sm-10">
+                                  <input type="number" class="form-control form-shadow" >
+                                </div>
+                              </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Category</label>
+                                <div class="col-sm-10">
+                                  <select name="category" class="form-control form-shadow">
+                                      <option value="" disabled selected>Category</option>
+                                      <option value="food">Food</option>
+                                      <option value="drink">Drink</option>
+                                  </select>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer border-top-0">
+                        <button
+                            type="button"
+                            class="btn btn-one px-4 rounded-xs"
+                            data-dismiss="modal"
+                        >
+                            Cancel
+                        </button>
+                        <button type="button" class="btn btn-two px-4 rounded-xs">
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+    </body>
+</html>

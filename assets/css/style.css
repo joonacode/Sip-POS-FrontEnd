@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Airbnb Cereal App Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Book'),
+        url('../fonts/AirbnbCerealBook.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal App Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Light'),
+        url('../fonts/AirbnbCerealLight.woff') format('woff');
+}
+
+body {
+    font-family: 'Airbnb Cereal App Book';
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px 30px 20px 20px;
+}
+
+.content-left {
+    background-color: rgba(190, 195, 202, 0.3);
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 75px;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.25);
+    margin-top: -24px;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-item {
+    margin-bottom: 30px;
+}
+
+.sidebar-item:focus {
+    box-shadow: none;
+}
+
+.sidebar-item:nth-child(1) {
+    padding-top: 22px;
+}
+
+.sidebar-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-left {
+    width: 100%;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 7px 0px 5px 5px rgba(0, 0, 0, 0.25);
+    padding: 20px 15px;
+}
+
+.navbar-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product {
+    border: 0;
+    background-color: transparent !important;
+}
+
+.action-img {
+    transition: .2s;
+}
+
+.product .action-img:hover {
+    opacity: 0.8;
+}
+
+.product-image {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image.active::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.check-icon {
+    background-image: url('../images/check.png');
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    display: none;
+}
+
+.product-image.active .check-icon {
+    display: block;
+}
+
+.product-detail {
+    padding: 5px 0;
+}
+
+.product-title {
+    color: #333;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.product-title:hover {
+    color: #000;
+}
+
+.product-price {
+    color: #333;
+    font-weight: bold;
+}
+
+.cart-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-cart {
+    padding: 0 20px;
+}
+
+.chart-empty {
+    /* display: none; */
+    text-align: center;
+    margin-top: 60px;
+}
+
+.chart-empty h5 {
+    margin-top: -30px;
+    font-weight: bold;
+}
+
+.chart-empty p {
+    opacity: 0.3;
+}
+
+.form-shadow {
+    border: 0;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.btn-one {
+    color: #fff;
+    background-color: #f24f8a;
+}
+
+.btn-one:hover {
+    color: #fff;
+    background-color: #ee5f94;
+}
+
+.btn-two {
+    color: #fff;
+    background-color: #57cad5;
+}
+
+.btn-two:hover {
+    color: #fff;
+    background-color: #41c5d1;
+}
+
+.rounded-sm {
+    border-radius: 10px !important;
+}
+
+.rounded-xs {
+    border-radius: 5px !important;
+}
+
+.list-chart {
+    margin: 50px 0;
+}
+
+.chart-product {
+    display: flex;
+}
+
+.chart-product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.chart-title-product {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.custom-chart-input {
+    text-align: center !important;
+    max-width: 50px !important;
+    font-size: 12px;
+}
+
+.btn-success-custom {
+    background: rgba(130, 222, 58, 0.2);
+    color: #82de3a;
+    border: 1px solid #82de3a;
+    font-weight: bold;
+    padding: 0 10px !important;
+    font-size: 20px;
+}
+
+.ml-min {
+    margin-left: -1px;
+}
+
+.name-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.prod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+.card-history {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    font-weight: bold;
+}
+
+.card-history .title {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.card-history .price {
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+.card-history .percent {
+    font-size: 13px;
+}
+
+.delete-chart {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(221, 52, 52, 0.7) !important;
+}
+
+
+.delete-chart:hover {
+    background-color: red !important;
+    color: #fff;
+}
