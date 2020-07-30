@@ -17,18 +17,28 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8 px-0">
+                <div class="col-lg-9 col-md-8 col-sm-12 px-0">
                     <div class="navbar-left border-right">
-                        <a href="#">
+                        <button type="button" class="btn m-0 p-0 hamburger text-decoration-none">
                             <img width="25" height="25" src="./assets/images/menu.png" alt="" />
-                        </a>
-                        <div class="navbar-title">Joona Cafe</div>
-                        <a href="#">
-                            <img width="25" height="25" src="./assets/images/search.png" alt="" />
-                        </a>
+                        </button>
+                        <div class="navbar-title">Food Items</div>
+                        <div>
+                            <button type="button" class="btn py-0 position-relative" data-toggle="modal" data-target="#modalCart" id="modal-cart">
+                                <svg width="28" height="28" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                  </svg>
+                                  <span class="badge badge-info rounded-circle cart-ic-res">0</span>
+                            </button>
+                            <a href="#">
+                                <img width="25" height="25" src="./assets/images/search.png" alt="" />
+                            </a>
+                            
+                        </div>
                     </div>
                     <div class="content-left pl-0 pt-4 pr-4 pb-0">
                         <div class="sidebar">
+                            <div class="sidebar-sub">
                             <a href="index.html" class="sidebar-item">
                                 <img src="./assets/images/fork.png" alt="" />
                             </a>
@@ -40,9 +50,9 @@
                                 <img src="./assets/images/add.png" alt="" />
 
                             </button>
-                            </a>
                         </div>
-                        <div class="main-left">
+                        </div>
+                        <div class="main-left mb-5">
                             <div class="row">
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
@@ -200,11 +210,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="col-md-4 px-0">
+                <div class="col-lg-3 col-md-4 col-sm-12 px-0" id="content-right">
                     <div class="navbar-right">
                         <div class="cart-title">
                             Cart
@@ -219,14 +231,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-12 px-0">
+                    <footer class="py-3 bg-light shadow-lg">
+                        <div class="container-fluid text-center">
+                            &copy; JoonaCode 2020
+                        </div>
+                    </footer>
+                </div>
+                
             </div>
         </div>
     </main>
+   
 
-    <!-- Modal Add Menu -->
-    <div class="modal fade" id="addMenu" tabindex="-1" role="dialog" aria-labelledby="addMenuLabel" aria-hidden="true">
+     <!-- Modal Add Menu -->
+     <div class="modal fade" id="addMenu" tabindex="-1" role="dialog" aria-labelledby="addMenuLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content rounded-sm">
+            <div class="modal-content p-3 rounded-xs">
                 <div class="modal-header border-bottom-0">
                     <h5 class="modal-title font-weight-bold" id="addMenuLabel">
                         Add Item
@@ -279,6 +300,31 @@
         </div>
     </div>
 
+      <!-- Modal Cart Mobile -->
+      <div class="modal fade pr-0" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="modalCartLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-full">
+          <div class="modal-content p-3 border-0 rounded-0">
+              <div class="modal-header">
+                  <h5 class="modal-title font-weight-bold">Checkout</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+              <div class="modal-body">
+                <div class="main-cart">
+                    <div class="chart-empty mb-5 pb-5">
+                        <img src="./assets/images/food-and-restaurant.png" alt="" />
+                        <h5>Your cart is empty</h5>
+                        <p>Please add some items from the menu</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -288,6 +334,7 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

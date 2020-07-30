@@ -17,40 +17,54 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8 px-0">
+                <!-- Navbar Left -->
+                <div class="col-lg-9 col-md-8 col-sm-12 px-0">
                     <div class="navbar-left border-right">
-                        <a href="#">
+                        <button type="button" class="btn m-0 p-0 hamburger text-decoration-none">
                             <img width="25" height="25" src="./assets/images/menu.png" alt="" />
-                        </a>
-                        <div class="navbar-title">Joona Cafe</div>
-                        <a href="#">
-                            <img width="25" height="25" src="./assets/images/search.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="content-left pl-0 pt-4 pr-4 pb-0">
-                        <div class="sidebar">
-                            <a href="index.html" class="sidebar-item">
-                                <img src="./assets/images/fork.png" alt="" />
-                            </a>
-                            <a href="history.html" class="sidebar-item">
-                                <img src="./assets/images/clipboard.png" alt="" />
-                            </a>
-
-                            <button type="button" class="btn sidebar-item" data-toggle="modal" data-target="#addMenu">
-                                <img src="./assets/images/add.png" alt="" />
-
+                        </button>
+                        <div class="navbar-title">Food Items</div>
+                        <div>
+                            <button type="button" class="btn py-0 position-relative" data-toggle="modal"
+                                data-target="#modalCart" id="modal-cart">
+                                <svg width="28" height="28" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                                <span class="badge badge-info rounded-circle cart-ic-res">3</span>
                             </button>
+                            <a href="#">
+                                <img width="25" height="25" src="./assets/images/search.png" alt="" />
                             </a>
                         </div>
-                        <div class="main-left">
+                    </div>
+                    <!-- Content Left -->
+                    <div class="content-left pl-0 pt-4 pr-4 pb-0">
+                        <div class="sidebar">
+                            <div class="sidebar-sub">
+                                <a href="index.html" class="sidebar-item">
+                                    <img src="./assets/images/fork.png" alt="" />
+                                </a>
+                                <a href="history.html" class="sidebar-item">
+                                    <img src="./assets/images/clipboard.png" alt="" />
+                                </a>
+
+                                <button type="button" class="btn sidebar-item" data-toggle="modal"
+                                    data-target="#addMenu">
+                                    <img src="./assets/images/add.png" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="main-left mb-5">
                             <div class="row">
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/product1.png');">
+                                            <div class="product-image" style="
+                                                        background-image: url('./assets/images/product/product1.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
                                             </div>
                                         </a>
                                         <div class="card-body product-detail">
@@ -64,11 +78,10 @@
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image active"
-                                                style="background-image: url('./assets/images/product/bear.png');">
+                                            <div class="product-image active" style="
+                                                        background-image: url('./assets/images/product/bear.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
-
                                             </div>
                                         </a>
                                         <div class="card-body product-detail">
@@ -82,10 +95,10 @@
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/firdaus-roslan-pN769u0KHNA-unsplash.png');">
+                                            <div class="product-image" style="
+                                                        background-image: url('./assets/images/product/firdaus-roslan-pN769u0KHNA-unsplash.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
                                             </div>
                                         </a>
                                         <div class="card-body product-detail">
@@ -99,10 +112,10 @@
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/redvelvet.png');">
+                                            <div class="product-image" style="
+                                                        background-image: url('./assets/images/product/redvelvet.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
                                             </div>
                                         </a>
                                         <div class="card-body product-detail">
@@ -116,10 +129,10 @@
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/chocorum.png');">
+                                            <div class="product-image" style="
+                                                        background-image: url('./assets/images/product/chocorum.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
                                             </div>
                                         </a>
                                         <div class="card-body product-detail">
@@ -133,10 +146,10 @@
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image active"
-                                                style="background-image: url('./assets/images/product/blackforest.png');">
+                                            <div class="product-image active" style="
+                                                        background-image: url('./assets/images/product/blackforest.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
                                             </div>
                                         </a>
                                         <div class="card-body product-detail">
@@ -150,10 +163,10 @@
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/chickenkatsu.png');">
+                                            <div class="product-image" style="
+                                                        background-image: url('./assets/images/product/chickenkatsu.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
                                             </div>
                                         </a>
 
@@ -168,10 +181,10 @@
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image active"
-                                                style="background-image: url('./assets/images/product/salmon.png');">
+                                            <div class="product-image active" style="
+                                                        background-image: url('./assets/images/product/salmon.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
                                             </div>
                                         </a>
 
@@ -186,10 +199,10 @@
                                 <div class="col-lg-4 col-sm-6 mb-3">
                                     <div class="card product">
                                         <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/wiener.png');">
+                                            <div class="product-image" style="
+                                                        background-image: url('./assets/images/product/wiener.png');
+                                                    ">
                                                 <div class="check-icon"></div>
-
                                             </div>
                                         </a>
                                         <div class="card-body product-detail">
@@ -204,7 +217,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 px-0">
+                <!-- Navbar right -->
+                <div class="col-lg-3 col-md-4 col-sm-12 px-0" id="content-right">
                     <div class="navbar-right">
                         <div class="cart-title">
                             Cart
@@ -215,11 +229,15 @@
                         <div class="list-chart">
                             <div class="chart-product mb-4">
                                 <div class="position-relative">
-                                    <img src="./assets/images/product/bear.png" alt="">
+                                    <div class="img-list-chart" style="
+                                                background-image: url('./assets/images/product/bear.png');
+                                            "></div>
                                     <button class="btn btn-sm delete-chart">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-                                          </svg>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div class="name-input">
@@ -229,29 +247,31 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-success-custom rounded-0" type="button"
-                                                id="button-addon1">-</button>
-
+                                                id="button-addon1">
+                                                -
+                                            </button>
                                         </div>
-                                        <input type="text" value="1" min="1"
-                                            class="form-control custom-chart-input" placeholder=""
-                                            aria-label="Example text with button addon"
-                                            aria-describedby="button-addon1">
+                                        <input type="text" value="1" min="1" class="form-control custom-chart-input"
+                                            placeholder="" aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1" />
                                         <button class="btn ml-min btn-success-custom rounded-0" type="button"
-                                            id="button-addon1">+</button>
-                                        </div>
+                                            id="button-addon1">
+                                            +
+                                        </button>
                                     </div>
-                                <!-- <div class="total-price">
-                                        Rp.15.000
-                                    </div> -->
-
+                                </div>
                             </div>
                             <div class="chart-product mb-4">
                                 <div class="position-relative">
-                                    <img src="./assets/images/product/blackforest.png" alt="">
+                                    <div class="img-list-chart" style="
+                                                background-image: url('./assets/images/product/blackforest.png');
+                                            "></div>
                                     <button class="btn btn-sm delete-chart">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-                                          </svg>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div class="name-input">
@@ -261,29 +281,32 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-success-custom rounded-0" type="button"
-                                                id="button-addon1">-</button>
-
+                                                id="button-addon1">
+                                                -
+                                            </button>
                                         </div>
-                                        <input type="text" value="1" min="1"
-                                            class="form-control custom-chart-input" placeholder=""
-                                            aria-label="Example text with button addon"
-                                            aria-describedby="button-addon1">
+                                        <input type="text" value="1" min="1" class="form-control custom-chart-input"
+                                            placeholder="" aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1" />
                                         <button class="btn ml-min btn-success-custom rounded-0" type="button"
-                                            id="button-addon1">+</button>
+                                            id="button-addon1">
+                                            +
+                                        </button>
                                     </div>
                                 </div>
-                                <!-- <div class="total-price">
-                                        Rp.15.000
-                                    </div> -->
-
                             </div>
                             <div class="chart-product mb-4">
                                 <div class="position-relative">
-                                    <img src="./assets/images/product/salmon.png" alt="">
+                                    <div class="img-list-chart" style="
+                                                background-image: url('./assets/images/product/salmon.png');
+                                            "></div>
+
                                     <button class="btn btn-sm delete-chart">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-                                          </svg>
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <div class="name-input">
@@ -293,21 +316,19 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-success-custom rounded-0" type="button"
-                                                id="button-addon1">-</button>
-
+                                                id="button-addon1">
+                                                -
+                                            </button>
                                         </div>
-                                        <input type="text" value="1" min="1"
-                                            class="form-control custom-chart-input" placeholder=""
-                                            aria-label="Example text with button addon"
-                                            aria-describedby="button-addon1">
+                                        <input type="text" value="1" min="1" class="form-control custom-chart-input"
+                                            placeholder="" aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1" />
                                         <button class="btn ml-min btn-success-custom rounded-0" type="button"
-                                            id="button-addon1">+</button>
+                                            id="button-addon1">
+                                            +
+                                        </button>
                                     </div>
                                 </div>
-                                <!-- <div class="total-price">
-                                        Rp.15.000
-                                    </div> -->
-
                             </div>
                         </div>
                         <div class="checkout pt-5">
@@ -317,10 +338,20 @@
                             </div>
                             <p class="mt-2 mb-1">*Belum termasuk ppn</p>
                             <button class="btn btn-two font-weight-bold py-2 mb-2 btn-block" data-toggle="modal"
-                                data-target="#modalCheckout">Checkout</button>
+                                data-target="#modalCheckout">
+                                Checkout
+                            </button>
                             <a href="index.html" class="btn btn-one font-weight-bold py-2 btn-block">Cancel</a>
                         </div>
                     </div>
+                </div>
+                <!-- Footer -->
+                <div class="col-md-12 px-0">
+                    <footer class="py-3 bg-light shadow-lg">
+                        <div class="container-fluid text-center">
+                            &copy; JoonaCode 2020
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -343,19 +374,19 @@
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Name</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control form-shadow">
+                                <input type="text" class="form-control form-shadow" />
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Image</label>
                             <div class="col-sm-10">
-                                <input type="file" class="form-control form-shadow">
+                                <input type="file" class="form-control form-shadow" />
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Price</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control form-shadow">
+                                <input type="number" class="form-control form-shadow" />
                             </div>
                         </div>
                         <div class="form-group row">
@@ -436,6 +467,143 @@
         </div>
     </div>
 
+    <!-- Modal Cart Mobile -->
+    <div class="modal fade pr-0" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="modalCartLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-full">
+            <div class="modal-content p-3 border-0 rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="main-cart">
+                        <div class="my-4">
+                            <div class="chart-product mb-4">
+                                <div class="position-relative">
+                                    <div class="img-list-chart" style="
+                                                background-image: url('./assets/images/product/bear.png');
+                                            "></div>
+                                    <button class="btn btn-sm delete-chart">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="name-input">
+                                    <span class="chart-title-product">Coffe Latte</span>
+                                    Rp. 15.000
+
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-success-custom rounded-0" type="button"
+                                                id="button-addon1">
+                                                -
+                                            </button>
+                                        </div>
+                                        <input type="text" value="1" min="1" class="form-control custom-chart-input"
+                                            placeholder="" aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1" />
+                                        <button class="btn ml-min btn-success-custom rounded-0" type="button"
+                                            id="button-addon1">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-product mb-4">
+                                <div class="position-relative">
+                                    <div class="img-list-chart" style="
+                                                background-image: url('./assets/images/product/blackforest.png');
+                                            "></div>
+                                    <button class="btn btn-sm delete-chart">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="name-input">
+                                    <span class="chart-title-product">Black Forest</span>
+                                    Rp. 30.000
+
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-success-custom rounded-0" type="button"
+                                                id="button-addon1">
+                                                -
+                                            </button>
+                                        </div>
+                                        <input type="text" value="1" min="1" class="form-control custom-chart-input"
+                                            placeholder="" aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1" />
+                                        <button class="btn ml-min btn-success-custom rounded-0" type="button"
+                                            id="button-addon1">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-product mb-4">
+                                <div class="position-relative">
+                                    <div class="img-list-chart" style="
+                                                background-image: url('./assets/images/product/salmon.png');
+                                            "></div>
+
+                                    <button class="btn btn-sm delete-chart">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="name-input">
+                                    <span class="chart-title-product">Salmon Truffle</span>
+                                    Rp. 60.000
+
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-success-custom rounded-0" type="button"
+                                                id="button-addon1">
+                                                -
+                                            </button>
+                                        </div>
+                                        <input type="text" value="1" min="1" class="form-control custom-chart-input"
+                                            placeholder="" aria-label="Example text with button addon"
+                                            aria-describedby="button-addon1" />
+                                        <button class="btn ml-min btn-success-custom rounded-0" type="button"
+                                            id="button-addon1">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout pt-5">
+                            <div class="d-flex font-weight-bold justify-content-between">
+                                <span>Total: </span>
+                                <span>Rp. 105.000*</span>
+                            </div>
+                            <p class="mt-2 mb-1">*Belum termasuk ppn</p>
+                            <button class="btn btn-two font-weight-bold py-2 mb-2 btn-block" data-toggle="modal"
+                                data-target="#modalCheckout" id="btn-checkout-mobile">
+                                Checkout
+                            </button>
+                            <a href="index.html" class="btn btn-one font-weight-bold py-2 btn-block">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -445,6 +613,7 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
