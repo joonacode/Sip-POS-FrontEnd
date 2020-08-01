@@ -4,38 +4,33 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #fafafa;
-    margin-bottom: 200px;
 }
 
 header {
-    height: 800px;
+    height: 600px;
     padding: 100px 0;
 }
-.bg-head {
-    background: linear-gradient(285.38deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
-}
-.content-head {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
 
-.content-head h1 {
-    font-size: 60px;
+.logo {
     font-weight: 700;
-    color: #555;
+    font-size: 25px;
+    color: #7d5a5a !important;
 }
 
-.content-head p {
+.bg-head {
+    background: linear-gradient(100deg, #ffdcf7 30.05%, rgba(255, 143, 178, 0) 133.19%);
+}
+
+.header-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #7d5a5a;
+}
+
+.header-desc {
     margin-top: 20px;
     font-size: 18px;
-}
-
-.img-head {
-    margin-top: -270px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1)
+    color: #7d5a5a;
 }
 
 .sub-heading {
@@ -53,14 +48,14 @@ header {
 }
 
 #about {
-    margin: 100px auto;
+    margin: 70px auto 150px auto;
 }
 
 .section-wrapper {
     position: relative;
     overflow: hidden;
     padding-bottom: 50px;
-    min-height: 500px;
+    min-height: 550px;
 }
 
 .bg-img-fluid {
@@ -70,5 +65,34 @@ header {
     border-radius: 10px;
     position: absolute;
     top: 0;
+}
+
+.position-right {
     right: -200px;
+}
+
+.position-left {
+    left: -200px;
+}
+
+.round-hide {
+    background-color: #fafafa;
+    border-radius: 100px;
+    color: white;
+    margin-top: -28px;
+    padding: 32px 0;
+    
+}
+
+.round-hide::after {
+    content: '';
+}
+
+.img-head {
+    position: relative;
+    bottom: 50px;
+}
+
+#home, #history {
+    background-color: #ccc;
 }
