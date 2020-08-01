@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fafafa;
+    margin-bottom: 200px;
+}
+
+header {
+    height: 800px;
+    padding: 100px 0;
+}
+.bg-head {
+    background: linear-gradient(285.38deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+}
+.content-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-head h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #555;
+}
+
+.content-head p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.img-head {
+    margin-top: -270px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1)
+}
+
+.sub-heading {
+    font-size: 40px !important;
+    color: #333;
+}
+
+.text-desc {
+    color: #444;
+    font-size: 18px;
+}
+
+.content-margin {
+    margin: 50px auto;
+}
+
+#about {
+    margin: 100px auto;
+}
+
+.section-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+    min-height: 500px;
+}
+
+.bg-img-fluid {
+    border: 0;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    background-color: #343a40!important;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: -200px;
+}
