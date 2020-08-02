@@ -120,7 +120,7 @@ body {
 
 .product-image.active::after {
     content: '';
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px 10px 0 0;
     position: absolute;
     top: 0;
@@ -130,10 +130,7 @@ body {
 }
 
 .check-icon {
-    background-image: url('../images/check.png');
-    width: 50px;
-    height: 50px;
-    z-index: 1;
+    z-index: 10;
     display: none;
 }
 
