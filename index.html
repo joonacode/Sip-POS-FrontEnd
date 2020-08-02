@@ -5,325 +5,400 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/landing.css" />
 
-    <title>Hello, world!</title>
+    <title>Sip POS - Simple And Clean POS APP</title>
 </head>
 
 <body>
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9 col-md-8 col-sm-12 px-0">
-                    <div class="navbar-left border-right">
-                        <button type="button" class="btn m-0 p-0 hamburger text-decoration-none">
-                            <img width="25" height="25" src="./assets/images/menu.png" alt="" />
-                        </button>
-                        <div class="navbar-title">Food Items</div>
-                        <div>
-                            <button type="button" class="btn py-0 position-relative" data-toggle="modal" data-target="#modalCart" id="modal-cart">
-                                <svg width="28" height="28" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                                  </svg>
-                                  <span class="badge badge-info rounded-circle cart-ic-res">0</span>
-                            </button>
-                            <a href="#">
-                                <img width="25" height="25" src="./assets/images/search.png" alt="" />
-                            </a>
-                            
-                        </div>
-                    </div>
-                    <div class="content-left pl-0 pt-4 pr-4 pb-0">
-                        <div class="sidebar">
-                            <div class="sidebar-sub">
-                            <a href="index.html" class="sidebar-item">
-                                <img src="./assets/images/fork.png" alt="" />
-                            </a>
-                            <a href="history.html" class="sidebar-item">
-                                <img src="./assets/images/clipboard.png" alt="" />
-                            </a>
+    <div class="bg-head">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">
+                    <img src="./assets/images/logo.png" width="100" alt="" srcset="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                            <button type="button" class="btn sidebar-item" data-toggle="modal" data-target="#addMenu">
-                                <img src="./assets/images/add.png" alt="" />
-
-                            </button>
-                        </div>
-                        </div>
-                        <div class="main-left mb-5">
-                            <div class="row">
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="list.html" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/product1.png');">
-                                                <div class="check-icon"></div>
-
-                                            </div>
-                                        </a>
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Espresso
-                                            </a>
-                                            <span class="product-price">Rp. 10.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/bear.png');">
-                                                <div class="check-icon"></div>
-
-
-                                            </div>
-                                        </a>
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Cofee Latte
-                                            </a>
-                                            <span class="product-price">Rp. 15.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/firdaus-roslan-pN769u0KHNA-unsplash.png');">
-                                                <div class="check-icon"></div>
-
-                                            </div>
-                                        </a>
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Cappucino
-                                            </a>
-                                            <span class="product-price">Rp. 5.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/redvelvet.png');">
-                                                <div class="check-icon"></div>
-
-                                            </div>
-                                        </a>
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Red Valvet Latte
-                                            </a>
-                                            <span class="product-price">Rp. 33.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/chocorum.png');">
-                                                <div class="check-icon"></div>
-
-                                            </div>
-                                        </a>
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Chocho Rhum
-                                            </a>
-                                            <span class="product-price">Rp. 28.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/blackforest.png');">
-                                                <div class="check-icon"></div>
-
-                                            </div>
-                                        </a>
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Black Forest
-                                            </a>
-                                            <span class="product-price">Rp. 30.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/chickenkatsu.png');">
-                                                <div class="check-icon"></div>
-
-                                            </div>
-                                        </a>
-
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Chicken Katsu Dabu-dabu
-                                            </a>
-                                            <span class="product-price">Rp. 30.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/salmon.png');">
-                                                <div class="check-icon"></div>
-
-                                            </div>
-                                        </a>
-
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Salmon Truffle Teriyaki
-                                            </a>
-                                            <span class="product-price">Rp. 60.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 mb-3">
-                                    <div class="card product">
-                                        <a href="#" class="action-img">
-                                            <div class="product-image"
-                                                style="background-image: url('./assets/images/product/wiener.png');">
-                                                <div class="check-icon"></div>
-
-                                            </div>
-                                        </a>
-                                        <div class="card-body product-detail">
-                                            <a href="#" class="product-title">
-                                                Wiener Schnitzle
-                                            </a>
-                                            <span class="product-price">Rp. 69.000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ml-2 px-3 btn btn-primary shadow" href="#">Buy Now</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-12 px-0" id="content-right">
-                    <div class="navbar-right">
-                        <div class="cart-title">
-                            Cart
-                            <span class="badge badge-info ml-1 rounded-circle">0</span>
-                        </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 pr-5 left-header-mobile">
+                        <span class="font-weight-light">Memperkenalkan Sip POS</span>
+                        <h1 class="header-title">Beautiful and Simple <br> Point Of Sales Aplication</h1>
+                        <p class="header-desc">Sip POS merupakan aplikasi point of sales yang menyediakan fitur menarik bagi calon pembeli karena fiturnya sangat sedikit</p>
+                        <a href="" class="btn shadow btn-primary btn-header mt-2 px-5">Lear More <svg width="30" height="30"
+                                viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z" />
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z" />
+                            </svg></a>
+                        <a href="home.html" target="_blank" class="btn shadow btn-header btn-info mt-2 px-5 ml-3">Try Demo <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                          </svg></a>
                     </div>
-                    <div class="main-cart">
-                        <div class="chart-empty">
-                            <img src="./assets/images/food-and-restaurant.png" alt="" />
-                            <h5>Your cart is empty</h5>
-                            <p>Please add some items from the menu</p>
-                        </div>
+                    <div class="col-md-5 col-sm-12 hide-mobile">
+                        <img src="./assets/images/desktop.png" class="img-fluid img-head" alt="desktop">
                     </div>
                 </div>
-                <div class="col-md-12 px-0">
-                    <footer class="py-3 bg-light shadow-lg">
-                        <div class="container-fluid text-center">
-                            &copy; JoonaCode 2020
-                        </div>
-                    </footer>
-                </div>
-                
+            </div>
+        </header>
+    </div>
+    <!-- efek -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <div class="round-hide"></div>
             </div>
         </div>
-    </main>
-   
+    </div>
 
-     <!-- Modal Add Menu -->
-     <div class="modal fade" id="addMenu" tabindex="-1" role="dialog" aria-labelledby="addMenuLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content p-3 rounded-xs">
-                <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title font-weight-bold" id="addMenuLabel">
-                        Add Item
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <!-- About -->
+    <div class="container" id="about">
+        <h2 class="sub-heading font-weight-bold mb-5 text-center">Kenapa Sip POS Cocok Untuk Usaha Anda</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="my-3 font-weight-bold">Berbasis Website</h4>
+                            <span class="border rounded-circle p-2">
+                                <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-laptop" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M13.5 3h-11a.5.5 0 0 0-.5.5V11h12V3.5a.5.5 0 0 0-.5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11z" />
+                                    <path d="M0 12h16v.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V12z" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <p class="mb-0 mt-2">Dapat diakses diperangkat apa saja dan dimana saja</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">Name</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control form-shadow">
-                            </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="my-3 font-weight-bold">Murah</h4>
+                            <span class="border rounded-circle p-2">
+                                <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-cash" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M15 4H1v8h14V4zM1 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H1z" />
+                                    <path
+                                        d="M13 4a2 2 0 0 0 2 2V4h-2zM3 4a2 2 0 0 1-2 2V4h2zm10 8a2 2 0 0 1 2-2v2h-2zM3 12a2 2 0 0 0-2-2v2h2zm7-4a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                                </svg>
+                            </span>
                         </div>
-                        <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">Image</label>
-                            <div class="col-sm-10">
-                                <input type="file" class="form-control form-shadow">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">Price</label>
-                            <div class="col-sm-10">
-                                <input type="number" class="form-control form-shadow">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">Category</label>
-                            <div class="col-sm-10">
-                                <select name="category" class="form-control form-shadow">
-                                    <option value="" disabled selected>Category</option>
-                                    <option value="food">Food</option>
-                                    <option value="drink">Drink</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
+
+                        <p class="mb-0 mt-2">Murah tetapi semua fitur utama dari aplikasi Point Of Sales ada</p>
+                    </div>
                 </div>
-                <div class="modal-footer border-top-0">
-                    <button type="button" class="btn btn-one px-4 rounded-xs" data-dismiss="modal">
-                        Cancel
-                    </button>
-                    <button type="button" class="btn btn-two px-4 rounded-xs">
-                        Add
-                    </button>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="my-3 font-weight-bold">Responsive</h4>
+                            <span class="border rounded-circle p-2">
+                                <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                    <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <p class="mb-0 mt-2">Tampilan optimal ketika aplikasi dipakai di perangkat berbeda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="my-3 font-weight-bold">No Reload</h4>
+                            <span class="border rounded-circle p-2">
+                                <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-arrow-clockwise"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <p class="mb-0 mt-2">Tidak perlu mereload halaman ketika melakukan transaksi</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-      <!-- Modal Cart Mobile -->
-      <div class="modal fade pr-0" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="modalCartLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-full">
-          <div class="modal-content p-3 border-0 rounded-0">
-              <div class="modal-header">
-                  <h5 class="modal-title font-weight-bold">Checkout</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
 
-              <div class="modal-body">
-                <div class="main-cart">
-                    <div class="chart-empty mb-5 pb-5">
-                        <img src="./assets/images/food-and-restaurant.png" alt="" />
-                        <h5>Your cart is empty</h5>
-                        <p>Please add some items from the menu</p>
+    <div class="section-wrapper" id="home">
+        <div class="container content-margin">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 pr-5">
+                    <h2 class="sub-heading font-weight-bold mb-4">Clean and Fresh UI</h2>
+                    <p class="text-desc">Antarmuka yang bersih dan mudah dipahami oleh user</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-img-fluid shadow-md">
+                        <div class="card-body pt-4 pl-4 pr-4 pb-0">
+                            <img src="./assets/images/list.png" class="img-fluid" alt="list">
+                        </div>
                     </div>
                 </div>
-              </div>
-          </div>
-      </div>
-  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="responsive">
+        <div class="container content-margin">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-body pt-4 pl-4 pr-4 pb-0">
+                            <img src="./assets/images/mobile.png" class="img-fluid" alt="mobile">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="sub-heading font-weight-bold mb-4">Mobile Friendly</h2>
+                    <p class="text-desc">Antarmukan terlihat bagus ketika diakses menggunakan ponsel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-wrapper" id="history">
+        <div class="container content-margin">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 pr-5">
+                    <h2 class="sub-heading font-weight-bold mb-4">History</h2>
+                    <p class="text-desc">Lihat riwayat penjualan dan statistik penjualan</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-img-fluid shadow-md">
+                        <div class="card-body pt-4 pl-4 pr-4 pb-0">
+                            <img src="./assets/images/history.png" class="img-fluid" alt="history">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="pricing">
+        <h2 class="sub-heading font-weight-bold mb-5 text-center">Tunggu Apa Lagi<br>Pilih Rencana Anda</h2>
+        <div class="row">
+            <div class="col-lg-9 col-md-11 col-sm-12 mx-auto">
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-5">
+                        <div class="card pricing basic shadow-sm">
+                            <div class="card-body p-5">
+                                <div class="text-center">
+                                    <h4 class="font-weight-bold">Sip POS Basic</h4>
+                                    <span>Free</span>
+                                </div>
+                                <div class="list-plans">
+                                    <div class="plan-item">
+                                        <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-check2 mr-2"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>Hanya satu halaman
+                                    </div>
+                                    <div class="plan-item x">
+                                        <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-x mr-2"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                                        </svg>Mempunyai tampilan responsive
+                                    </div>
+                                    <div class="plan-item x">
+                                        <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-x mr-2"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                                        </svg>Versi terbaru
+                                    </div>
+                                    <div class="plan-item x">
+                                        <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-x mr-2"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                                            <path fill-rule="evenodd"
+                                                d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                                        </svg>Mendapatkan pembaruan secara gratis
+                                    </div>
+                                </div>
+                                <button
+                                    class="btn btn-block btn-info mt-4 py-2 rounded-pill d-flex justify-content-center align-items-center">
+                                    Download
+                                    <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-cloud-arrow-down ml-2"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+                                        <path fill-rule="evenodd"
+                                            d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card pricing pro shadow">
+                            <div class="card-body p-5">
+                                <div class="discount">
+                                    -99%
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="font-weight-bold">Sip POS Pro</h4>
+                                    <span style="text-decoration: line-through;"> Rp. 1.000.000</span> /
+                                    <span> Rp. 10.000</span>
+                                </div>
+                                <div class="list-plans">
+                                    <div class="plan-item">
+                                        <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-check2 mr-2"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>Termasuk semua halaman
+                                    </div>
+                                    <div class="plan-item">
+                                        <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-check2 mr-2"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>Mempunyai tampilan responsive
+                                    </div>
+                                    <div class="plan-item">
+                                        <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-check2 mr-2"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>Versi terbaru
+                                    </div>
+                                    <div class="plan-item">
+                                        <svg width="30" height="30" viewBox="0 0 16 16" class="bi bi-check2 mr-2"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>Dapat pembaruan aplikasi
+                                    </div>
+                                </div>
+                                <button
+                                    class="btn btn-block btn-primary mt-4 py-2 rounded-pill d-flex justify-content-center align-items-center">
+                                    Buy Now
+                                    <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-cart4 ml-2"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-bottom-0 py-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 my-1 border-right">
+                                <div class="text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M6.176 1.322l2.844-1.322 4.041 7.89-2.724 1.341c-.538 1.259 2.159 6.289 3.297 6.372.09-.058 2.671-1.328 2.671-1.328l4.11 7.932s-2.764 1.354-2.854 1.396c-7.862 3.591-19.103-18.258-11.385-22.281zm1.929 1.274l-1.023.504c-5.294 2.762 4.177 21.185 9.648 18.686l.971-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.251-4.398z" />
+                                        </svg> +022 231 321
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-1 border-right">
+                                <div class="text-center">
+                                    <svg width="24" height="24" class="mr-1" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                        clip-rule="evenodd">
+                                        <path
+                                            d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z" />
+                                        </svg> sip pos@gmail.com
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 my-1">
+                                <div class="text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                                        </svg> 0859 7466 1294
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 border-top">
+        <div class="container">
+            <div class="d-flex justify-content-between footer">
+                <span>&copy; 2020 Sip POS - Developed By JoonaCode</span>
+                <div>
+                    <a href="#" class="mr-3 text-dark">Home</a>
+                    <a href="#" class="mr-3 text-dark">Features</a>
+                    <a href="#" class="mr-3 text-dark">Pricing</a>
+                    <a href="#" class="text-dark">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -334,7 +409,6 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
