@@ -68,7 +68,7 @@
                           </svg></a>
                     </div>
                     <div class="col-md-5 col-sm-12 hide-mobile">
-                        <img src="./assets/images/desktop.png" class="img-fluid img-head" alt="desktop">
+                        <img data-src="./assets/images/desktop.png" src="./assets/images/charlie-loader.gif" class="lazyload img-fluid img-head" alt="desktop">
                     </div>
                 </div>
             </div>
@@ -180,7 +180,7 @@
                 <div class="col-md-6">
                     <div class="card bg-img-fluid shadow-md">
                         <div class="card-body pt-4 pl-4 pr-4 pb-0">
-                            <img src="./assets/images/list.png" class="img-fluid" alt="list">
+                            <img data-src="./assets/images/list.png" src="./assets/images/charlie-loader.gif" class="lazyload img-fluid" alt="list">
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@
                 <div class="col-md-6">
                     <div class="card border-0 bg-transparent">
                         <div class="card-body pt-4 pl-4 pr-4 pb-0">
-                            <img src="./assets/images/mobile.png" class="img-fluid" alt="mobile">
+                            <img data-src="./assets/images/mobile.png" src="./assets/images/charlie-loader.gif" class="lazyload img-fluid" alt="mobile">
                         </div>
                     </div>
                 </div>
@@ -216,8 +216,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card bg-img-fluid shadow-md">
-                        <div class="card-body pt-4 pl-4 pr-4 pb-0">
-                            <img src="./assets/images/history.png" class="img-fluid" alt="history">
+                        <div class="card-body pt-4 pl-4 pr-4 pb-0"> 
+                            <img data-src="./assets/images/history.png" src="./assets/images/charlie-loader.gif" class="lazyload img-fluid" alt="history">
                         </div>
                     </div>
                 </div>
@@ -415,7 +415,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script>
+        lazyload();
+    </script>
 </body>
 
 </html>
